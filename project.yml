@@ -1,0 +1,36 @@
+name: SSHBar
+options:
+  bundleIdPrefix: com.jasperwarlich
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+    ENABLE_HARDENED_RUNTIME: YES
+targets:
+  SSHBar:
+    type: application
+    platform: macOS
+    sources:
+      - path: SSHBar
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jasperwarlich.sshbar
+        PRODUCT_NAME: SSHBar
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+    info:
+      path: SSHBar/Info.plist
+      properties:
+        LSUIElement: true
+        CFBundleName: SSHBar
+        CFBundleDisplayName: SSHBar
+        CFBundleShortVersionString: "1.0.0"
+        CFBundleVersion: "1"
+        NSHumanReadableCopyright: "Copyright © 2026 Jasper Warlich"
+        NSAppleEventsUsageDescription: "SSHBar uses Apple Events to open ssh connections directly in Terminal or iTerm2."
