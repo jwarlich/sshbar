@@ -13,3 +13,4 @@ DerivedData/
 .build/
 .swiftpm/
 docs
+builds
