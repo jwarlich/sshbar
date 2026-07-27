@@ -4,6 +4,13 @@ A macOS menu bar app for quick SSH connections. Add servers with one or more
 users, pin your favorites, and connect with a click — SSHBar opens your
 default terminal app and runs `ssh` with the right host, port, user, and key.
 
+## Install
+
+```bash
+brew tap jwarlich/tools
+brew install --cask sshbar
+```
+
 ## Requirements
 
 - macOS 13.0+
